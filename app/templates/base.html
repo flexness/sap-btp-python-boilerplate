@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="https://unpkg.com/@sap-theming/theming-base-content@11.1.7/dist/css/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/fundamental-styles@0.10.0/dist/fundamental-styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="fd-shellbar">
+        <div class="fd-shellbar__group fd-shellbar__group--product">
+            <span class="fd-shellbar__title">My Flask App</span>
+        </div>
+    </header>
+    <div class="fd-page">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

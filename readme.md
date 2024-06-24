@@ -9,5 +9,13 @@
 - Access on premise oauth e.g. via principal Propagation?
 - Status/ping route
 
-## sap packages
-- tbc
+## optional for later
+- /routes folder and single py files for every route
+- 
+
+## sap tech overview
+
+## cli
+- `cf create-service xsuaa application my-xsuaa -c xs-security.json`
+- `cf create-service hana hdi-shared my-hana
+- `cf push` 
