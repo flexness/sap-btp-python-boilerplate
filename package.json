@@ -1,0 +1,16 @@
+{
+  "name": "sap-python-boilerplate",
+  "version": "1.0.0",
+  "description": "- boilerplate based on https://developers.sap.com/tutorials/btp-cf-buildpacks-python-create.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap-theming/theming-base-content": "^11.16.1",
+    "fundamental-styles": "^0.37.0"
+  }
+}

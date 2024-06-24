@@ -1,10 +1,15 @@
-from flask import Flask, jsonify, request, Blueprint
+from flask import Flask, jsonify, request, Blueprint, render_template
 from .services import db_connect, create_security_context
 
 # create blueprint for routes
 routes = Blueprint('routes', __name__)
 
 @routes.route('/')
+@routes.route('/index')
+def index():
+    return render_template('index.html')
+
+@routes.route('/hello')
 def hello():
     return 'Hello World!'
 
