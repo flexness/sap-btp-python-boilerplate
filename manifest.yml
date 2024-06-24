@@ -1,0 +1,12 @@
+---
+applications:
+  - name: python-tutorial
+    memory: 128M
+    buildpacks:
+      - python_buildpack
+    command: python app.py
+    services:
+      - name: my-xsuaa
+        type: xsuaa
+      - name: my-hana
+        type: hana
